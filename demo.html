@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      table {
+        display: block;
+        margin: 50px auto;
+        width: 400px;
+      }
+      table,
+      td {
+        border: 1px solid #000;
+        border-collapse: collapse;
+      }
+      td {
+        width: 20px;
+        height: 20px;
+        font-size: 30px;
+        line-height: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="info"></p>
+    <table></table>
+    <script src="js/Game.js"></script>
+    <script src="js/Snake.js"></script>
+    <script src="js/Food.js"></script>
+    <script>
+      var infoBox = document.getElementById('info')
+      var g = new Game()
+      g.start()
+    </script>
+  </body>
+</html>
